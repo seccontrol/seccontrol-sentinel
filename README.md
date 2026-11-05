@@ -129,7 +129,7 @@ flowchart TD
 
 SecControl Sentinel is maintained by the **SecControl SOC & Threat Intelligence Unit**.
 If you discover a security vulnerability or wish to report indicators of compromise (IoC), please consult our [Security Policy](SECURITY.md) or contact us directly at:
-📧 **assistenza@seccontrol.it** / **seccontrolitaly@gmail.com**
+📧 **assistenza@seccontrol.it** 
 
 ---
 
