@@ -1,10 +1,10 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/J4sp3rd3v/seccontrol-sentinel/main/docs/assets/banner.svg" alt="SecControl Sentinel Banner" width="100%" onerror="this.style.display='none'"/>
+  <img src="https://raw.githubusercontent.com/seccontrol/seccontrol-sentinel/main/docs/assets/banner.svg" alt="SecControl Sentinel Banner" width="100%" onerror="this.style.display='none'"/>
 </p>
 
 # 🛡️ SecControl Sentinel
 
-[![CI Workflow](https://github.com/J4sp3rd3v/seccontrol-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/J4sp3rd3v/seccontrol-sentinel/actions)
+[![CI Workflow](https://github.com/seccontrol/seccontrol-sentinel/actions/workflows/ci.yml/badge.svg)](https://github.com/seccontrol/seccontrol-sentinel/actions)
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![NIS2 Compliant](https://img.shields.io/badge/NIS2%20Cyber%20Hygiene-Art.%2021%20Ready-emerald.svg)](https://seccontrol.it)
@@ -44,7 +44,7 @@ Developed by **[SecControl SOC & Threat Intelligence](https://seccontrol.it)**, 
 
 ```bash
 # Clone the repository
-git clone https://github.com/J4sp3rd3v/seccontrol-sentinel.git
+git clone https://github.com/seccontrol/seccontrol-sentinel.git
 cd seccontrol-sentinel
 
 # Install dependencies and package

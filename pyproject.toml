@@ -40,5 +40,5 @@ sentinel = "seccontrol_sentinel.cli:main"
 [project.urls]
 Homepage = "https://seccontrol.it"
 Documentation = "https://seccontrol.it/brief"
-Repository = "https://github.com/J4sp3rd3v/seccontrol-sentinel"
-"Bug Tracker" = "https://github.com/J4sp3rd3v/seccontrol-sentinel/issues"
+Repository = "https://github.com/seccontrol/seccontrol-sentinel"
+"Bug Tracker" = "https://github.com/seccontrol/seccontrol-sentinel/issues"
