@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "seccontrol-sentinel"
+version = "1.0.0"
+description = "SecControl Sentinel - Open-Source Endpoint Security, Behavioral Antivirus & Perimeter Monitoring Watchdog"
+readme = "README.md"
+authors = [
+    { name = "SecControl SOC Unit", email = "assistenza@seccontrol.it" }
+]
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Systems Administration"
+]
+requires-python = ">=3.10"
+dependencies = [
+    "psutil>=5.9.0",
+    "rich>=13.0.0",
+    "requests>=2.28.0",
+    "dnspython>=2.3.0"
+]
+
+[project.scripts]
+seccontrol-sentinel = "seccontrol_sentinel.cli:main"
+sentinel = "seccontrol_sentinel.cli:main"
+
+[project.urls]
+Homepage = "https://seccontrol.it"
+Documentation = "https://seccontrol.it/brief"
+Repository = "https://github.com/J4sp3rd3v/seccontrol-sentinel"
+"Bug Tracker" = "https://github.com/J4sp3rd3v/seccontrol-sentinel/issues"
