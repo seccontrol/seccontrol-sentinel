@@ -12,6 +12,21 @@ Progettato per server Linux (systemd) e Windows Server, Sentinel opera a bassiss
 
 ---
 
+## ??? Fondamenta Open-Source & Ingegneria dei Sistemi
+
+SecControl Sentinel fonda la propria affidabilit? sui collaudati standard architetturali e motori dell'ecosistema open-source mondiale:
+- **Wazuh Agent Core & HIDS**: Ispirato ai meccanismi di host-based intrusion detection e telemetria sicura di Wazuh.
+- **Osquery Host Telemetry**: Modello di interrogazione dello stato di sistema, processi e socket di rete a basso livello.
+- **ClamAV Engine**: Analisi euristica delle minacce note e scanning delle firme malevole.
+
+### Ottimizzazioni & Personalizzazioni SecControl per Aziende e PMI:
+1. **Footprint Ultra-Leggero (17.4 MB RAM)**: Eliminato l'overhead di macchine virtuali Java o database pesanti per consentire l'esecuzione continua in produzione anche su macchine con risorse limitate.
+2. **Web GUI Dark Glassmorphic Locale**: Cockpit web interattivo eseguibile direttamente su http://127.0.0.1:9876 senza dipendenze grafiche X11 o runtime esterni.
+3. **Watchdog Porte RFC 959 (FTP 21) & Protocolli in Chiaro**: Modulo specializzato nella rilevazione e neutralizzazione immediata di comunicazioni non cifrate a rischio intercettazione credenziali.
+4. **Compliance Automatizzata NIS2 Art. 21 (D.Lgs. 138/2024)**: Generazione automatica di perizie tecniche e indici di conformit? conformi alle linee guida ACN/ENISA per audit peritali e coperture assicurative cyber risk.
+
+---
+
 ## 🚀 Novità v2.4.1: Dark Glassmorphic Web GUI
 
 SecControl Sentinel integra nativamente una **GUI web interattiva** con design dark glassmorphic coerente con la suite SecControl, eseguibile localmente senza alcuna dipendenza grafica esterna pesante:
