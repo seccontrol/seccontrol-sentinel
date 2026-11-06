@@ -168,6 +168,12 @@ def cmd_report_nis2(args):
             json.dump(report, f, indent=2)
         console.print(f"\n[green]Audit report saved to: {args.output}[/green]")
 
+def cmd_gui(args):
+    print_banner()
+    console.print(f"[bold cyan]Launching SecControl Sentinel Dark Glassmorphic Web GUI on http://{args.host}:{args.port}...[/bold cyan]")
+    from seccontrol_sentinel.gui.server import start_gui_server
+    start_gui_server(host=args.host, port=args.port, open_browser=not args.no_browser)
+
 def main():
     parser = argparse.ArgumentParser(
         prog="seccontrol-sentinel",
@@ -197,6 +203,12 @@ def main():
     p_nis2.add_argument("--scan-dir", help="Directory to check for endpoint hygiene")
     p_nis2.add_argument("--output", help="Output JSON path")
 
+    # gui
+    p_gui = subparsers.add_parser("gui", help="Launch interactive dark glassmorphic web cockpit GUI")
+    p_gui.add_argument("--host", default="127.0.0.1", help="Bind host (default: 127.0.0.1)")
+    p_gui.add_argument("--port", type=int, default=9876, help="Bind port (default: 9876)")
+    p_gui.add_argument("--no-browser", action="store_true", help="Do not open browser automatically")
+
     args = parser.parse_args()
 
     if args.command == "scan":
@@ -207,6 +219,8 @@ def main():
         cmd_monitor(args)
     elif args.command == "report-nis2":
         cmd_report_nis2(args)
+    elif args.command == "gui":
+        cmd_gui(args)
 
 if __name__ == "__main__":
     main()

@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "seccontrol-sentinel"
-version = "1.0.0"
-description = "SecControl Sentinel - Open-Source Endpoint Security, Behavioral Antivirus & Perimeter Monitoring Watchdog"
+version = "2.4.1"
+description = "SecControl Sentinel - Enterprise Endpoint Detection, Behavioral Antivirus & Perimeter Watchdog (NIS2 / ISO 27001 / EDR)"
 readme = "README.md"
 authors = [
     { name = "SecControl SOC Unit", email = "assistenza@seccontrol.it" }
@@ -37,8 +37,11 @@ dependencies = [
 seccontrol-sentinel = "seccontrol_sentinel.cli:main"
 sentinel = "seccontrol_sentinel.cli:main"
 
+[tool.setuptools.package-data]
+seccontrol_sentinel = ["gui/web/*"]
+
 [project.urls]
 Homepage = "https://seccontrol.it"
-Documentation = "https://seccontrol.it/brief"
+Documentation = "https://seccontrol.it/agents"
 Repository = "https://github.com/seccontrol/seccontrol-sentinel"
 "Bug Tracker" = "https://github.com/seccontrol/seccontrol-sentinel/issues"
